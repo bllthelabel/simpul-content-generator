@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simpul Social Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: '#65a34e', // Simpul Green
+                dark: '#1e293b',    // Dark Slate
+                offwhite: '#f8fafc', // Cloud White
+                mint: '#f0fdf4',    // Mint Light
+                red: '#ef4444',     // Action Red
+                stone: '#e2e8f0',   // Border color
+              }
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+            letterSpacing: {
+              'tight': '-0.02em',
+            },
+            borderRadius: {
+              'xl': '12px',
+              '2xl': '16px',
+              '3xl': '24px',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Simpul Brand Patterns */
+      .tech-grid-pattern {
+        background-size: 40px 40px;
+        background-image: 
+          linear-gradient(to right, rgba(203, 213, 225, 0.4) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(203, 213, 225, 0.4) 1px, transparent 1px);
+      }
+
+      .diagonal-lines {
+        background: repeating-linear-gradient(
+          45deg,
+          #94a3b8,
+          #94a3b8 1px,
+          transparent 1px,
+          transparent 8px
+        );
+      }
+
+      .diagonal-lines-white {
+        background: repeating-linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.1) 1px,
+          transparent 1px,
+          transparent 8px
+        );
+      }
+
+      .img-bright {
+        filter: contrast(105%) brightness(102%);
+      }
+      
+      aside::-webkit-scrollbar {
+        width: 6px;
+      }
+      aside::-webkit-scrollbar-track {
+        background: #1e293b;
+      }
+      aside::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 4px;
+      }
+      aside::-webkit-scrollbar-thumb:hover {
+        background: #65a34e;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "html-to-image": "https://esm.sh/html-to-image@^1.11.13"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
